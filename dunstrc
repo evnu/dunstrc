@@ -1,0 +1,32 @@
+# vim: set filetype=cfg:
+[global]
+    allow_markup=yes
+    format = "%s\n%b"
+    sort = yes               # sort by urgency
+    indicate_hidden=yes      # indicate how many messages are hidden due to geometry
+    word_wrap=yes
+    geometry = "300x5-30+20"
+    show_indicators = yes    # Display indicators for URLs (U) and actions (A).
+    separator_height = 1
+    horizontal_padding = 8
+    separator_color = frame
+    browser = /usr/bin/firefox -new-tab
+[frame]
+    width = 1
+    color = "#aaaaaa"
+[urgency_low]
+    # IMPORTANT: colors have to be defined in quotation marks.
+    # Otherwise the "#" and following would be interpreted as a comment.
+    background = "#222222"
+    foreground = "#888888"
+    timeout = 10
+
+[urgency_normal]
+    background = "#285577"
+    foreground = "#ffffff"
+    timeout = 10
+
+[urgency_critical]
+    background = "#900000"
+    foreground = "#ffffff"
+    timeout = 0
